@@ -36,6 +36,12 @@ a {
     background-color: black;
 }
 
+#email {
+    display: block;
+    padding: 8px;
+    background-color: white;
+}
+
 body {
 	background-color: white;
 	font-family: Arial;
