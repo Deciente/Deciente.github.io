@@ -19,6 +19,28 @@
             Projects
         </h1>
         <h2>Scheme!</h2>
+
+        <script language="JavaScript"> 
+            var i = 0; var path = new Array(); 
+
+            // LIST OF IMAGES 
+            path[0] = "schemess/ss1.png"; 
+            path[1] = "schemess/ss2.png";
+            path[2] = "schemess/ss3.png"; 
+            path[3] = "schemess/ss4.png";
+            path[4] = "schemess/ss5.png";
+            function swapImage() 
+            { 
+            document.slide.src = path[i]; 
+            if(i < path.length - 1) i++; 
+            else i = 0; 
+            setTimeout("swapImage()",3000); 
+            } 
+            window.onload=swapImage; 
+        </script> 
+        <img height="200" name="slide" src="image_1.gif" width="400" />
+
+
         <p>
             Interpreter for Scheme (lisp dialect) written with Python. Features usage of buffer and stack data structures. Properly applies tail recursive function calls so that it remains correct with proper Scheme convention. Very tough project and took extensive critical thinking, teamwork, and patience (the debugging was brutal). Includes exhaustive test cases.
         </p>
