@@ -28,6 +28,13 @@ li a {
     margin-top: 0px;
 }
 
+#stuff{
+    display: block;
+    padding: 3px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
 /* Change the link color to #111 (black) on hover */
 li a:hover {
     background-color: blue;
