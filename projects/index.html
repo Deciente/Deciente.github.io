@@ -38,7 +38,7 @@
             } 
             window.onload=swapImage; 
         </script> 
-        <img height="200" name="slide" src="image_1.gif" width="400" />
+        <img height="200" name="slide" src="schemess/ss1.png" width="400" />
 
 
         <p>
@@ -51,6 +51,24 @@
         </p>
 
         <h2>Employee Database</h2>
+        <script language="JavaScript"> 
+            var i = 0; var path = new Array(); 
+
+            // LIST OF IMAGES 
+            path[0] = "databasess/dss1.png"; 
+            path[1] = "databasess/dss2.png";
+            path[2] = "databasess/dss3.png"; 
+            function swapImage() 
+            { 
+            document.slide2.src = path[i]; 
+            if(i < path.length - 1) i++; 
+            else i = 0; 
+            setTimeout("swapImage()",3000); 
+            } 
+            window.onload=swapImage; 
+        </script> 
+        <img height="300" name="slide2" src="databasess/dss1.png" />
+
         <p>
             Java application written with Netbeans IDE. Allows you to keep track of employees, and also add and remove them. This application stores the employees in a hastable. <a id="email" href="https://github.com/Deciente/EmployeeDatabase" target="_blank">GitHub link</a>
         </p>
