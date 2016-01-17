@@ -1,11 +1,11 @@
 var images_scheme = ["schemess/ss1.png", "schemess/ss2.png", "schemess/ss3.png", "schemess/ss4.png", "schemess/ss5.png"];
-var counter_scheme = 1;
+var counter_scheme = 0;
 
-var images_quiz = ["quizss/quizss1", "quizss/quizss2", "quizss/quizss3"];
-var counter_quiz = 1;
+var images_quiz = ["quizss/qss1.png", "quizss/qss2.png", "quizss/qss3.png"];
+var counter_quiz = 0;
 
-var images_database = ["databasess/dss1.png", "databasess/ss2.png", "databasess/ss3.png"];
-var counter_database = 1;
+var images_database = ["databasess/dss1.png", "databasess/dss2.png", "databasess/dss3.png"];
+var counter_database = 0;
 
 
 
@@ -14,6 +14,7 @@ function nextImageQuiz() {
 		counter_quiz += 1;
 		document.getElementById("quizslide").setAttribute("src", images_quiz[counter_quiz]);
 	}
+	;
 }
 
 function prevImageQuiz() {
@@ -59,7 +60,6 @@ document.getElementById("prev_button_scheme").onclick = function() {prevImageSch
 
 document.getElementById("next_button_database").onclick = function() {nextImageDatabase()};
 document.getElementById("prev_button_database").onclick = function() {prevImageDatabase()};
-
 
 
 
